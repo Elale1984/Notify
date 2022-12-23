@@ -4,7 +4,6 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.NoteUseCases
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.util.NoteOrder
@@ -28,7 +27,7 @@ class NotesViewModel @Inject constructor(
     private var getNotesJob: Job? = null
 
     init {
-        getNotes(NoteOrder.Date(OrderType.Decending))
+        getNotes(NoteOrder.Date(OrderType.Descending))
     }
     fun onEvent(event: NotesEvent){
         when(event) {

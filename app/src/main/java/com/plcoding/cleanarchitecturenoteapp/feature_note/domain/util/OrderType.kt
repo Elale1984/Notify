@@ -2,5 +2,5 @@ package com.plcoding.cleanarchitecturenoteapp.feature_note.domain.util
 
 sealed class OrderType {
     object Ascending: OrderType()
-    object Decending: OrderType()
+    object Descending: OrderType()
 }
