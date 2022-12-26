@@ -44,7 +44,7 @@ class AddEditNoteViewModel @Inject constructor(
             if(noteId != -1){
                 viewModelScope.launch {
                     noteUseCases.getNote(noteId)?.also { note ->
-                        currentNoteId = note.id
+                        currentNoteId = note.noteId
                         _noteTitle.value = noteTitle.value.copy(
                                 text = note.title,
                         isHintVisible = false
@@ -96,7 +96,7 @@ class AddEditNoteViewModel @Inject constructor(
                                 content = noteContent.value.text,
                                 timestamp = System.currentTimeMillis(),
                                 color = noteColor.value,
-                                id = currentNoteId
+                                noteId = currentNoteId
                             )
                         )
                         _eventFlow.emit(UiEvent.SaveNote)
