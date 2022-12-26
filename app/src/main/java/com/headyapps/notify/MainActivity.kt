@@ -14,7 +14,7 @@ import androidx.navigation.navArgument
 import com.headyapps.notify.feature_note.presentation.add_edit_note.components.AddEditNoteScreen
 import com.headyapps.notify.feature_note.presentation.notes.components.NotesScreen
 import com.headyapps.notify.feature_note.presentation.util.Screen
-import com.headyapps.notify.ui.theme.CleanArchitectureNoteAppTheme
+import com.headyapps.notify.ui.theme.Notify
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CleanArchitectureNoteAppTheme {
+            Notify {
                 Surface(
                     color = MaterialTheme.colors.background
                 ){
