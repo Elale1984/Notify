@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.headyapps.cleanarchitecturenoteapp">
+    package="com.headyapps.notify">
 
     <application
-        android:name="com.headyapps.cleanarchitecturenoteapp.NoteApp"
+        android:name="com.headyapps.notify.NoteApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CleanArchitectureNoteApp">
         <activity
-            android:name="com.headyapps.cleanarchitecturenoteapp.MainActivity"
+            android:name="com.headyapps.notify.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CleanArchitectureNoteApp">
